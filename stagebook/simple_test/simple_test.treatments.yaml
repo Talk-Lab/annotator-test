@@ -16,7 +16,7 @@ treatments:
         duration: 600
         elements:
           - type: prompt
-            file: video_1_title.prompt.md
+            file: task/video_1_title.prompt.md
           - type: mediaPlayer
             url: ${video_1_url}
             name: video_1
@@ -30,7 +30,7 @@ treatments:
         duration: 600
         elements:
           - type: prompt
-            file: video_2_title.prompt.md
+            file: task/video_2_title.prompt.md
           - type: mediaPlayer
             url: ${video_2_url}
             name: video_2
@@ -44,7 +44,7 @@ treatments:
       - name: movie_lover
         elements:
           - type: prompt
-            file: movie_lover.prompt.md
+            file: exit/movie_lover.prompt.md
             name: movie_lover
           - type: submitButton
             buttonText: "Finish"
