@@ -21,7 +21,7 @@ treatments:
             url: ${video_1_url}
             name: video_1
           - type: prompt
-            file: liking.prompt.md
+            file: task/liking.prompt.md
             name: liking_1
           - type: submitButton
             buttonText: "Next"
@@ -35,7 +35,7 @@ treatments:
             url: ${video_2_url}
             name: video_2
           - type: prompt
-            file: liking.prompt.md
+            file: task/liking.prompt.md
             name: liking_2
           - type: submitButton
             buttonText: "Next"
