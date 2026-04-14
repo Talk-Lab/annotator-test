@@ -10,6 +10,7 @@ introSequences:
 
 treatments:
   - name: compare
+    playerCount: 1
     gameStages:
       - name: first video
         duration: 600
