@@ -1,0 +1,37 @@
+introSequences:
+  - name: default
+    introSteps:
+      - name: "Intro"
+        elements:
+          - type: prompt
+            file: intro/intro.prompt.md
+          - type: submitButton
+            buttonText: "Start"
+
+treatments:
+  - name: survey
+    playerCount: 1
+    gameStages:
+      - name: questions
+        duration: 600
+        elements:
+          - type: prompt
+            file: task/color.prompt.md
+            name: color
+          - type: prompt
+            file: task/importance.prompt.md
+            name: importance
+          - type: prompt
+            file: task/thoughts.prompt.md
+            name: thoughts
+          - type: submitButton
+            buttonText: "Next"
+
+    exitSequence:
+      - name: movie_lover
+        elements:
+          - type: prompt
+            file: exit/movie_lover.prompt.md
+            name: movie_lover
+          - type: submitButton
+            buttonText: "Finish"
