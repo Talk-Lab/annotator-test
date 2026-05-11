@@ -1,0 +1,35 @@
+introSequences:
+  - name: default
+    introSteps:
+      - name: "Intro"
+        elements:
+          - type: prompt
+            file: intro/intro.prompt.md
+          - type: submitButton
+            buttonText: "Start"
+
+treatments:
+  - name: discussion
+    playerCount: 2
+    gameStages:
+      - name: video_discussion
+        duration: 120
+        discussion:
+          chatType: video
+          showNickname: true
+          showTitle: false
+        elements:
+          - type: prompt
+            file: task/topic.prompt.md
+          - type: timer
+          - type: submitButton
+            buttonText: "End discussion"
+
+    exitSequence:
+      - name: reflection
+        elements:
+          - type: prompt
+            file: exit/reflection.prompt.md
+            name: reflection
+          - type: submitButton
+            buttonText: "Finish"
